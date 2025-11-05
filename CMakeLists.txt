@@ -388,6 +388,9 @@ if(QJS_BUILD_EXAMPLES)
     target_compile_definitions(hello PRIVATE ${qjs_defines})
     target_link_libraries(hello qjs)
 
+    # demo
+    add_subdirectory(demo)
+
     add_executable(hello_module
         gen/hello_module.c
     )
